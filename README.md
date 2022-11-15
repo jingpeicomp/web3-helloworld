@@ -17,10 +17,10 @@
 
 首先需要安装 Solidity 编译环境和 Web3j cli，安装方法见：
 
-- Solidity 编译器安装教程：![https://docs.soliditylang.org/en/v0.8.17/installing-solidity.html](https://docs.soliditylang.org/en/v0.8.17/installing-solidity.html)
-- Web3j cli 安装教程：![https://github.com/web3j/web3j-cli](https://github.com/web3j/web3j-cli)
+- Solidity 编译器安装教程：[https://docs.soliditylang.org/en/v0.8.17/installing-solidity.html](https://docs.soliditylang.org/en/v0.8.17/installing-solidity.html)
+- Web3j cli 安装教程：[https://github.com/web3j/web3j-cli](https://github.com/web3j/web3j-cli)
 
-安装本地以太坊测试网络，作者使用的是 Ganache 搭建了一个本地测试网。Ganache 安装教程：![https://trufflesuite.com/docs/ganache/quickstart](https://trufflesuite.com/docs/ganache/quickstart/)
+安装本地以太坊测试网络，作者使用的是 Ganache 搭建了一个本地测试网。Ganache 安装教程：[https://trufflesuite.com/docs/ganache/quickstart](https://trufflesuite.com/docs/ganache/quickstart/)
 
 ### 编译
 
@@ -42,3 +42,6 @@ web3j generate solidity --binFile=./contract/Card.bin --abiFile=./contract/Card.
 ### 执行
 
 启动 Ganache，获取相关账号信息，并设置到 CardApplication 变量中，执行 main 方法即可。
+
+本地执行结果：
+[![zV1w79.png](https://s1.ax1x.com/2022/11/15/zV1w79.png)](https://imgse.com/i/zV1w79)
