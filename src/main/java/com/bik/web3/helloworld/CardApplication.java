@@ -24,18 +24,23 @@ public class CardApplication {
 
 
     public static void main(String[] args) throws Exception {
-//        create();
-        String contractAddress = "0x908D9A92f3C3E35CBa342C36C49E216174CE3b6c";
+        create();
 
-        Credentials credentials = Credentials.create(WALLET_PRIVATE_KEY);
+        String contractAddress = "0x908D9A92f3C3E35CBa342C36C49E216174CE3b6c";
+        Credentials ownerCredentials = Credentials.create(WALLET_PRIVATE_KEY);
         Credentials buyerCredentials = Credentials.create("ab2cbc37ccfc400cb2f44be1effb75bbab2fa9c7e4d2682b8a1ca41232c0ab30");
 
-//        cardService.buy(WEB3J, buyerCredentials, contractAddress);
-//        cardService.confirm(WEB3J, credentials, contractAddress);
+        cardService.buy(WEB3J, buyerCredentials, contractAddress);
+        cardService.confirm(WEB3J, ownerCredentials, contractAddress);
         String[] cardIdAndSecret = cardService.getCard(WEB3J, buyerCredentials, contractAddress);
         log.info("Buyer gets card id {} and secret {}", cardIdAndSecret[0], cardIdAndSecret[1]);
     }
 
+    /**
+     * 创建充值卡
+     *
+     * @throws Exception Exception
+     */
     private static void create() throws Exception {
         String cardId = UUID.randomUUID().toString().replace("-", "");
         String cardSecret = UUID.randomUUID().toString().replace("-", "");
