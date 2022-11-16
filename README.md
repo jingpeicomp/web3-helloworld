@@ -44,4 +44,5 @@ web3j generate solidity --binFile=./contract/Card.bin --abiFile=./contract/Card.
 启动 Ganache，获取相关账号信息，并设置到 CardApplication 变量中，执行 main 方法即可。
 
 本地执行结果：
-[![zV1w79.png](https://s1.ax1x.com/2022/11/15/zV1w79.png)](https://imgse.com/i/zV1w79)
+
+![zVXywR.png](https://s1.ax1x.com/2022/11/16/zVXywR.png)
